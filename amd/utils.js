@@ -20,6 +20,7 @@ define("functionals", {
       const next = src.next();
       !next.done && ret.push(next.value);
     }
+    src.return();
     return ret;
   },
 });
